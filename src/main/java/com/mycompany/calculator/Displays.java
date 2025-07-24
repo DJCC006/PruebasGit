@@ -24,11 +24,12 @@ public class Displays {
             System.out.println("***OPCIONES***\n"
                 +"Porfavor seleccione alguna de las siguientes opciones\n"
                 +"1.Sumar\n"+"2.Restar\n"+"3.Multiplicar\n"+"4.Dividir\n"+"5.Potencia\n"+"6.Salir\n"+"");
-            int opcion= lea.nextInt();
             int num1;
             int num2;
             double resultado;
-            switch(opcion){
+            try{
+                int opcion= lea.nextInt();
+                switch(opcion){
                 case 1:
                     System.out.println("\n*Ha seleccionado la opcion de sumar*");
                     System.out.println("\nIngrese el primer numero: ");
@@ -105,7 +106,13 @@ public class Displays {
                     System.out.println("Opcion incorrecta, porfavor ingrese una opcion valida");
                     
              
+               }
+            }catch(InputMismatchException e){
+                System.out.println("Porfavor ingrese una opcion valida");
+                lea.next();
             }
+            
+            
         }
     }
 }
