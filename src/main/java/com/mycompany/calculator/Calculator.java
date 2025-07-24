@@ -22,10 +22,5 @@ public class Calculator {
         int res=num1/num2;
         System.out.println(res);
         
-        
-        
-        
-        
-        
     }
 }
