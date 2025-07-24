@@ -4,6 +4,7 @@
 
 package com.mycompany.calculator;
 
+import java.util.Scanner;
 /**
  *
  * @author David
@@ -11,7 +12,20 @@ package com.mycompany.calculator;
 public class Calculator {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
-        System.out.println("Aqui hay una calculadora de prueba");
+        Scanner lea = new Scanner(System.in);
+        lea.useDelimiter("\n");
+        System.out.println("Ingrese primer numero");
+        int num1= lea.nextInt();
+        System.out.println("Ingrese segundo numero");
+        int num2 = lea.nextInt();
+        
+        int res=num1/num2;
+        System.out.println(res);
+        
+        
+        
+        
+        
+        
     }
 }
