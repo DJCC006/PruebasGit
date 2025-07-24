@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.mycompany.calculator;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
@@ -39,6 +40,7 @@ public class Displays {
                     num1=0;
                     num2=0;
                     resultado=0;
+                    break;
                 case 2:
                     System.out.println("\n*Ha seleccionado la opcion de resta: ");
                     System.out.println("\nIngrese el primer numero: ");
@@ -50,6 +52,7 @@ public class Displays {
                     num1=0;
                     num2=0;
                     resultado=0;
+                    break;
                 case 3:
                     System.out.println("\n*Ha seleccionado la opcion de multiplicacion: ");
                     System.out.println("\nIngrese el primer numero: ");
@@ -61,6 +64,7 @@ public class Displays {
                     num1=0;
                     num2=0;
                     resultado=0;
+                    break;
                     
                 case 4:
                     System.out.println("\n*Ha seleccionado la opcion de division: ");
@@ -78,6 +82,7 @@ public class Displays {
                     num1=0;
                     num2=0;
                     resultado=0;
+                    break;
                     
                 case 5:
                     System.out.println("\n*Ha seleccionado la opcion de potencia: ");
@@ -90,18 +95,17 @@ public class Displays {
                     num1=0;
                     num2=0;
                     resultado=0;
+                    break;
                 
                 case 6:
                     status=false;
+                    break;
                     
                 default:
                     System.out.println("Opcion incorrecta, porfavor ingrese una opcion valida");
+                    
+             
             }
         }
-
-
-        
-        
-        System.out.println("");
     }
 }
